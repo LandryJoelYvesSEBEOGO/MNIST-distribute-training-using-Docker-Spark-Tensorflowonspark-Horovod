@@ -1,0 +1,21 @@
+# code a utiliser lorsque vous voulez lancer un cluster spark avec un seul noeud 
+version: '3.8'
+
+services:
+  spark-master:
+    image: spark_master
+    container_name: spark-master
+    hostname: spark-master
+    environment:
+      - SPARK_MODE=master
+      - SPARK_MASTER_HOST=spark-master
+      - SPARK_MASTER_PORT=7077
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+      - "18080:18080"
+    command: >
+      bash -c "
+      /opt/spark/sbin/start-master.sh && 
+      /opt/spark/sbin/start-worker.sh spark://spark-master:7077 && 
+      tail -f /dev/null"
