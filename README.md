@@ -22,14 +22,13 @@ This project demonstrates how to set up a Spark cluster with multiple nodes and 
    ```sh
    docker-compose build
 
-Start the Docker Compose services:
+2.**Start the Docker Compose services**:
 
 Verify the Spark Cluster:
 
 Open your web browser and go to http://localhost:8080 to access the Spark UI. Ensure that all worker nodes are listed and have sufficient resources.
 
-Running the Training Script
-Access the Spark master container:
+3.**Access the Spark master container**:
 
 Submit the Spark job:
 
@@ -38,7 +37,7 @@ If you want to run the training on a single node, use the one_node.py script and
 
 Update the docker-compose.yml file to use a single node configuration:
 
-Recreate the container:
+4.**Recreate the container**:
 
 Submit the single node training job:
 
