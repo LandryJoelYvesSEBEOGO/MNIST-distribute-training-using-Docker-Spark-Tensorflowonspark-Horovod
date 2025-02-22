@@ -2,6 +2,8 @@
 
 This project demonstrates how to set up a Spark cluster with multiple nodes and perform distributed training using TensorFlow, Horovod, and TensorFlowOnSpark.
 
+https://github.com/LandryJoelYvesSEBEOGO/MNIST-distribute-training-using-Docker-Spark-Tensorflowonspark-Horovod/blob/main/spark%20image.png
+
 ## Project Structure
 
 - `Dockerfile`: Defines the Docker image for the Spark master and worker nodes, including the installation of necessary dependencies.
