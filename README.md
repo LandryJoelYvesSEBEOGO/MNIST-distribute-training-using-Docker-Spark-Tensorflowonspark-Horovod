@@ -16,6 +16,7 @@ This project demonstrates how to set up a Spark cluster with multiple nodes and 
 
 - Docker
 - Docker Compose
+- Requirements.txt
 
 ## Setup
 
